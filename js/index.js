@@ -140,3 +140,37 @@ window.addEventListener('keydown', e=>{
             break;
     }
 });
+
+window.addEventListener('swiped', e=>{
+    inputDir = {x: 0, y: 1} //Start game
+    musicSound.play();
+    switch(e.detail.dir){
+        case "up":
+            console.log("ArrowUp");
+            inputDir.x = 0;
+            inputDir.y = -1;
+            break;
+            
+        case "down":
+            console.log("ArrowDown");
+            inputDir.x = 0;
+            inputDir.y = 1;
+            break;
+
+        case "left":
+            console.log("ArrowLeft");
+            inputDir.x = -1;
+            inputDir.y = 0;
+            break;
+
+        case "right":
+            console.log("ArrowRight");
+            inputDir.x = 1;
+            inputDir.y = 0;
+            break;
+
+        
+        default:
+            break;
+    }
+});
