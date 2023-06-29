@@ -1,0 +1,65 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+
+}
+
+.body{
+    background-color: #000000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    width: 95vmin;
+    height: 95vmin;
+    border: white 5px solid;
+    display: grid;
+    grid-template-rows: repeat(50, 1fr);
+    grid-template-columns: repeat(50, 1fr);
+}
+
+.head{
+    background-color: whitesmoke;
+    border: .20vmin solid black;
+    border-radius: 3px;
+}
+
+.snake{
+    background-color: whitesmoke;
+    border: .20vmin solid black;
+    border-radius: 3px;
+}
+
+.food{
+    background-color: red;
+    border: .20vmin solid black;
+    border-radius: 3px;
+}
+
+#scoreBox, #highScoreBox{
+    top: 0px;
+    right: 0px;
+    color: white;
+    padding: 2vh;
+}
+
+#highScoreBox{
+    padding-top: 1vh;
+}
+
+.wrapper{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 2%;
+    right: 18%;
+    align-items: start;
+    font-size: x-large;
+}
